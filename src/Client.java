@@ -147,7 +147,7 @@ public class Client extends MainWindow
 				System.out.println(method.getName() + " = " + value);
 			} // if
 		}// for
-		String result = (cpu_load * 100) + "%";
+		String result = String.format("%.3f", (cpu_load * 100)) + "%";
 		return result;
 	}
 
